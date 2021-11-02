@@ -1,0 +1,50 @@
+//Restulados de la busqueda
+
+.cajaResultados {
+    text-decoration: none;
+
+    .resultadoBusqueda {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(auto-fill, minmax(Min(100%, 20rem), 1fr));
+        padding: 0.8rem;
+        margin: 1rem;
+        position: relative;
+
+        .opcionDestino {
+            border-radius: 1rem;
+            position: relative;
+
+            h3:hover {
+                color: var(--terciario);
+            }
+
+            img {
+                width: 100%;
+            }
+
+            div {
+                padding: 0.5rem;
+                text-align: center;
+            }
+        }
+
+        #volver {
+            position: absolute;
+            bottom: 1rem;
+            left: 1rem;
+        }
+    }
+
+    .loSentimos {
+        grid-column: 1/4;
+        font-size: 4rem;
+        text-align: center;
+        padding: 1rem;
+        margin: 4rem 0;
+    }
+    .cajaBtnRegresar{
+        display: flex;
+        justify-content: flex-end;
+    }
+}
