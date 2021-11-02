@@ -12,9 +12,9 @@ header {
     cursor: pointer; }
 
 .main {
-  position: relative;
   top: 50px;
-  padding-top: 20px; }
+  padding-top: 48px;
+  margin: 0 3rem; }
   .main aside {
     width: 60px;
     background: #fff;
@@ -28,7 +28,8 @@ header {
     z-index: 99; }
     .main aside ul {
       list-style: none;
-      width: 100%; }
+      width: 100%;
+      margin-top: 6rem; }
       .main aside ul li {
         border-bottom: 1px solid #ccc;
         padding: 10px 20px;
@@ -36,27 +37,6 @@ header {
         .main aside ul li:hover {
           background: #fff;
           box-shadow: inset 0px 0px 77px #dedede; }
-          .main aside ul li:hover a span.notif.red {
-            width: 30px;
-            height: 30px;
-            right: 15px;
-            color: #fff;
-            box-shadow: 0px 0px 60px #e74c3c;
-            top: 10px; }
-          .main aside ul li:hover a span.notif.yellow {
-            width: 30px;
-            height: 30px;
-            right: 15px;
-            color: #fff;
-            box-shadow: 0px 0px 60px #f1c40f;
-            top: 10px; }
-          .main aside ul li:hover a span.notif.green {
-            width: 30px;
-            height: 30px;
-            right: 15px;
-            color: #fff;
-            box-shadow: 0px 0px 60px #27ae60;
-            top: 10px; }
         .main aside ul li a {
           font-size: 14px;
           color: #4a4a4a;
@@ -69,35 +49,6 @@ header {
             vertical-align: middle;
             color: #000000;
             width: 38px; }
-            .main aside ul li a span.notif {
-              position: absolute;
-              top: 8px;
-              text-align: center;
-              width: 30px;
-              height: 30px;
-              right: 10px;
-              background: #343436;
-              line-height: 31px;
-              border-radius: 100%;
-              color: #fff; }
-              .main aside ul li a span.notif.green {
-                width: 10px;
-                height: 10px;
-                color: transparent;
-                right: 5px;
-                transition: all 0.2s ease; }
-              .main aside ul li a span.notif.yellow {
-                width: 10px;
-                height: 10px;
-                color: transparent;
-                right: 5px;
-                transition: all 0.2s ease; }
-              .main aside ul li a span.notif.red {
-                width: 10px;
-                height: 10px;
-                color: transparent;
-                right: 5px;
-                transition: all 0.2s ease; }
 
 article {
   width: 92%;
@@ -109,23 +60,9 @@ article {
   article .contenido {
     height: Min(700px, 100%); }
 
-.red {
-  background: #e74c3c !important;
-  box-shadow: 0px 0px 10px #e74c3c; }
-
-.yellow {
-  background: #f1c40f !important;
-  box-shadow: 0px 0px 10px #f1c40f; }
-
-.green {
-  background: #27ae60 !important;
-  box-shadow: 0px 0px 10px #27ae60; }
-
 aside.keep.width {
-  width: 200px; }
+  width: 356px; }
   aside.keep.width ul li a span.notif {
-    width: 30px;
-    height: 30px;
     right: 10px;
     color: #fff;
     box-shadow: 0px 0px 10px transparent;
@@ -178,50 +115,6 @@ p.blink {
     width: 49%; }
     .cajaOpciones select span {
       font-size: 0.8rem; }
-
-.cajaMapaInteractivo .mapa {
-  position: relative;
-  width: 95%;
-  margin: auto;
-  height: 500px; }
-  .cajaMapaInteractivo .mapa #map {
-    padding: 2rem;
-    width: 100%;
-    height: 100%;
-    z-index: 1; }
-
-.cajaResultados {
-  text-decoration: none; }
-  .cajaResultados .resultadoBusqueda {
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: repeat(auto-fill, minmax(Min(100%, 20rem), 1fr));
-    padding: 0.8rem;
-    margin: 1rem;
-    position: relative; }
-    .cajaResultados .resultadoBusqueda .opcionDestino {
-      border-radius: 1rem;
-      position: relative; }
-      .cajaResultados .resultadoBusqueda .opcionDestino h3:hover {
-        color: var(--terciario); }
-      .cajaResultados .resultadoBusqueda .opcionDestino img {
-        width: 100%; }
-      .cajaResultados .resultadoBusqueda .opcionDestino div {
-        padding: 0.5rem;
-        text-align: center; }
-    .cajaResultados .resultadoBusqueda #volver {
-      position: absolute;
-      bottom: 1rem;
-      left: 1rem; }
-  .cajaResultados .loSentimos {
-    grid-column: 1/4;
-    font-size: 4rem;
-    text-align: center;
-    padding: 1rem;
-    margin: 4rem 0; }
-  .cajaResultados .cajaBtnRegresar {
-    display: flex;
-    justify-content: flex-end; }
 
 :root {
   --primario: rgb(241, 241, 241);
@@ -314,3 +207,6 @@ p {
   .boton i {
     margin: 0 .5rem;
     font-size: 1.2rem; }
+
+.material-icons {
+  z-index: 2; }

@@ -7,8 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto Ocupacional</title>
     <!-- ICONOS -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
-        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="ASSETS/CSS/fontawesome.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <!-- NORMALIZE -->
     <link rel="stylesheet" href="ASSETS/CSS/normalize.css">
     <link rel="stylesheet" href="ASSETS/CSS/style.css">
@@ -17,24 +18,39 @@
 <body>
 
     <header>
-        <h1>Mi proyecto Ocupacional</h1>
-        <span class="menu"><i class="material-icons">menu</i></span>
+        <span class="menu"><i class="material-icons">menu</i>
+
+        </span>
     </header>
     <section class="main">
         <aside id="aside" class="keep">
             <ul>
-                <li class="amarillo">
-                    <a class="amarillo" href="#">
-                        <span><i class="material-icons">stay_current_portrait</i></span>
-                        Destinos
-                        <span class="notif yellow"></span>
+                <li class="pagina1">
+                    <a class="pagina1" href="#">
+                        <span><i class="material-icons pagina1">location_on</i></span>
+                        Punto de partida
+                        <span class="notif green"></span>
                     </a>
                 </li>
-                <li class="rojo">
-                    <a class="rojo" href="#">
-                        <span><i class="material-icons">location_on</i></span>
-                        Mapa
-                        <span class="notif red"></span>
+                <li class="pagina2">
+                    <a class="pagina2" href="#">
+                        <span><i class="material-icons pagina2">tips_and_updates</i></span>
+                        Habilidades/conocimientos
+                        <span class="notif green"></span>
+                    </a>
+                </li>
+                <li class="pagina3">
+                    <a class="pagina3" href="#">
+                        <span><i class="material-icons pagina3">psychology</i></span>
+                        Definición de metas
+                        <span class="notif green"></span>
+                    </a>
+                </li>
+                <li class="pagina4">
+                    <a class="pagina4" href="#">
+                        <span><i class="material-icons pagina4">check_circle_outline</i></span>
+                        Implementación del proyecto
+                        <span class="notif green"></span>
                     </a>
                 </li>
             </ul>
@@ -43,42 +59,45 @@
 
             <section class="contenido">
                 <section>
-                    <div class="cajaOpciones">
-                        <div class="imputBusqueda">
+                    <div class="paginaUno">
+                        <h1>Punto de partida</h1>
 
+                        <div>
+                            <h3>Diagnostico de situacion</h3>
+                            <p>Estudiante de Desarrollo Web, deseo formarme como desarrollador Front-End en primera
+                                instancia y luego explorar nuevas áreas, con el objetivo de tener un conocimiento global
+                                o
+                                de profesionalizarme en otro sector.
+                            </p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi perferendis placeat
+                                alias
+                                doloribus quae veniam voluptas asperiores, deleniti quas maiores hic omnis velit ad odit
+                                est
+                                tempora adipisci iusto recusandae.</p>
                         </div>
                     </div>
                 </section>
                 <section>
-
-
-                    <div class="cajaResultados">
-                        <ul id="viajes" class="resultadoBusqueda">
-                        </ul>
-                        <div class="cajaBtnRegresar">
-
-                        </div>
+                    <div class="paginaDos ocultar">
+                        <h1>Habilidades/conocimientos</h1>
                     </div>
                 </section>
-                <section>
 
-                    <!--MAPA-->
-                    <div class="cajaMapaInteractivo ocultar">
-                        <div class="mapa">
-                            <div id="map">
-                            </div>
-                        </div>
+                <section>
+                    <div class="paginaTres ocultar">
+                        <h1>Definición de metas</h1>
                     </div>
                 </section>
-                <section>
-                    <!-- AGENDA -->
-                    <div id="agendados" class="ocultar">
 
+                <section>
+                    <div class="paginaCuatro ocultar">
+                        <h1> Implementación del proyecto </h1>
                     </div>
                 </section>
             </section>
         </article>
     </section>
+    <script src="ASSETS/JS/jquery-3.6.0.min.js"></script>
     <script src="ASSETS/JS/index.js"></script>
 </body>
 

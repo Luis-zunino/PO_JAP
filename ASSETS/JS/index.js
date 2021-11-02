@@ -7,45 +7,51 @@ $(document).ready(function () {
 
 //Simulacion de HTMLs
 document.getElementById("aside").addEventListener("click", (e) => {
-  let listaDestinos = $(".cajaResultados");
-  let mapa = $(".cajaMapaInteractivo");
-  let agenda = $("#agendados");
+  let pagina1 = $(".paginaUno");
+  let pagina2 = $(".paginaDos");
+  let pagina3 = $(".paginaTres");
+  let pagina4 = $(".paginaCuatro");
   let r = e.target.classList;
 
-  if (r.contains("amarillo") || r.contains("yellow")) {
+  if (r.contains("pagina1")) {
     removerClases();
 
-    listaDestinos.addClass("mostrar");
-    mapa.addClass("ocultar");
-    agenda.addClass("ocultar");
-  } else if (r.contains("rojo") || r.contains("red")) {
+    pagina1.addClass("mostrar");
+    pagina2.addClass("ocultar");
+    pagina3.addClass("ocultar");
+    pagina4.addClass("ocultar");
+
+  } else if (r.contains("pagina2")) {
     removerClases();
 
-    listaDestinos.addClass("ocultar");
-    mapa.addClass("mostrar");
-    agenda.addClass("ocultar");
-  } else if (r.contains("verde") || r.contains("green")) {
+    pagina1.addClass("ocultar");
+    pagina2.addClass("mostrar");
+    pagina3.addClass("ocultar");
+    pagina4.addClass("ocultar");
+
+  } else if (r.contains("pagina3")) {
     removerClases();
 
-    listaDestinos.addClass("ocultar");
-    mapa.addClass("ocultar");
-    agenda.addClass("mostrar");
+    pagina1.addClass("ocultar");
+    pagina2.addClass("ocultar");
+    pagina3.addClass("mostrar");
+    pagina4.addClass("ocultar");
+
+  } else if (r.contains("pagina4")) {
+    removerClases();
+
+    pagina1.addClass("ocultar");
+    pagina2.addClass("ocultar");
+    pagina3.addClass("ocultar");
+    pagina4.addClass("mostrar");
+
   }
 
   function removerClases() {
-    listaDestinos.removeClass("mostrar");
-    mapa.removeClass("mostrar");
-    agenda.removeClass("mostrar");
+    pagina1.removeClass("mostrar");
+    pagina2.removeClass("mostrar");
+    pagina3.removeClass("mostrar");
+    pagina4.removeClass("mostrar");
+
   }
 });
-
-
-
-
-
-document.getElementById("volver").addEventListener("click", volverResultados);
-function volverResultados() {
-  // let volver = document.getElementById("viajes");
-  document.getElementById("viajes").innerHTML = "";
-  cargarCardViajes(viajes);
-}

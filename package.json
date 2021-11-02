@@ -1,0 +1,26 @@
+{
+  "name": "po_jap",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "node-sass": "^6.0.1",
+    "nodemon": "^2.0.14"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss ASSETS/SCSS/style.scss ASSETS/CSS/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Luis-zunino/PO_JAP.git"
+  },
+  "author": "Luis Zunino",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Luis-zunino/PO_JAP/issues"
+  },
+  "homepage": "https://github.com/Luis-zunino/PO_JAP#readme"
+}

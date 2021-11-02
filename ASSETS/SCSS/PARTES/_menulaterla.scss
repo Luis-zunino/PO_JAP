@@ -17,9 +17,10 @@ header {
 
 
 .main {
-    position: relative;
+    //position: relative;
     top: 50px;
-    padding-top: 20px;
+    padding-top: 48px;
+    margin: 0 3rem;
 
     aside {
         width: 60px;
@@ -36,6 +37,7 @@ header {
         ul {
             list-style: none;
             width: 100%;
+            margin-top: 6rem;
 
             li {
                 border-bottom: 1px solid #ccc;
@@ -47,32 +49,7 @@ header {
                     box-shadow: inset 0px 0px 77px #dedede;
 
 
-                    & a span.notif.red {
-                        width: 30px;
-                        height: 30px;
-                        right: 15px;
-                        color: #fff;
-                        box-shadow: 0px 0px 60px #e74c3c;
-                        top: 10px;
-                    }
 
-                    & a span.notif.yellow {
-                        width: 30px;
-                        height: 30px;
-                        right: 15px;
-                        color: #fff;
-                        box-shadow: 0px 0px 60px #f1c40f;
-                        top: 10px;
-                    }
-
-                    & a span.notif.green {
-                        width: 30px;
-                        height: 30px;
-                        right: 15px;
-                        color: #fff;
-                        box-shadow: 0px 0px 60px #27ae60;
-                        top: 10px;
-                    }
 
                 }
 
@@ -90,49 +67,14 @@ header {
                         color: #000000;
                         width: 38px;
 
-                        &.notif {
-                            position: absolute;
-                            top: 8px;
-                            text-align: center;
-                            width: 30px;
-                            height: 30px;
-                            right: 10px;
-                            background: #343436;
-                            line-height: 31px;
-                            border-radius: 100%;
-                            color: #fff;
 
-                            &.green {
-                                width: 10px;
-                                height: 10px;
-                                color: transparent;
-                                right: 5px;
-                                transition: all 0.2s ease;
-                            }
-
-
-                            &.yellow {
-                                width: 10px;
-                                height: 10px;
-                                color: transparent;
-                                right: 5px;
-                                transition: all 0.2s ease;
-                            }
-
-                            &.red {
-                                width: 10px;
-                                height: 10px;
-                                color: transparent;
-                                right: 5px;
-                                transition: all 0.2s ease;
-                            }
-                        }
                     }
                 }
             }
         }
     }
 }
+
 
 article {
     width: 92%;
@@ -148,29 +90,13 @@ article {
     }
 }
 
-.red {
-    background: #e74c3c !important;
-    box-shadow: 0px 0px 10px #e74c3c;
-}
-
-.yellow {
-    background: #f1c40f !important;
-    box-shadow: 0px 0px 10px #f1c40f;
-}
-
-.green {
-    background: #27ae60 !important;
-    box-shadow: 0px 0px 10px #27ae60;
-}
-
-
 
 aside.keep.width {
-    width: 200px;
+    width: 356px;
 
     ul li a span.notif {
-        width: 30px;
-        height: 30px;
+        //width: 30px;
+        //height: 30px;
         right: 10px;
         color: #fff;
         box-shadow: 0px 0px 10px transparent;
