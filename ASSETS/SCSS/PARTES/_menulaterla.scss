@@ -20,7 +20,7 @@ header {
     //position: relative;
     top: 50px;
     padding-top: 48px;
-    margin: 0 3rem;
+    margin: 3rem 3rem 0 3rem;
 
     aside {
         width: 60px;
@@ -86,6 +86,12 @@ article {
 
     .contenido {
         height: Min(700px, 100%);
+
+        .estiloContenido {
+            padding: 2rem;
+            // display: grid;
+            // grid-template-columns: 1fr 1fr 1fr;
+        }
 
     }
 }

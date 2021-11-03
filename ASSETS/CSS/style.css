@@ -14,7 +14,7 @@ header {
 .main {
   top: 50px;
   padding-top: 48px;
-  margin: 0 3rem; }
+  margin: 3rem 3rem 0 3rem; }
   .main aside {
     width: 60px;
     background: #fff;
@@ -59,6 +59,8 @@ article {
   box-shadow: 0px 2px 7px #6d6d6d; }
   article .contenido {
     height: Min(700px, 100%); }
+    article .contenido .estiloContenido {
+      padding: 2rem; }
 
 aside.keep.width {
   width: 356px; }
@@ -94,27 +96,16 @@ p.blink {
       top: 248px;
       left: 360px; }
 
-.cajaOpciones {
-  display: flex;
-  padding: 1rem;
-  align-items: center;
-  justify-content: space-between; }
-  .cajaOpciones .imputBusqueda {
-    width: 70%; }
-    .cajaOpciones .imputBusqueda input {
-      height: 3rem; }
-      .cajaOpciones .imputBusqueda input:first-of-type {
-        width: 80%; }
-      .cajaOpciones .imputBusqueda input:not(:first-of-type) {
-        width: 10%; }
-  .cajaOpciones div {
+.objetivos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: .8rem; }
+  .objetivos ul li {
+    font-size: 1.5rem;
     padding: .8rem; }
-    .cajaOpciones div:not(:first-of-type) {
-      width: 30%; }
-  .cajaOpciones select {
-    width: 49%; }
-    .cajaOpciones select span {
-      font-size: 0.8rem; }
+    .objetivos ul li i {
+      font-size: 1.5rem;
+      margin-right: .5rem; }
 
 :root {
   --primario: rgb(241, 241, 241);
@@ -174,7 +165,8 @@ h1 {
   font-size: 3rem; }
 
 h2 {
-  font-size: 2.8rem; }
+  font-size: 2rem;
+  padding: 1rem; }
 
 h3 {
   font-size: 2rem; }
@@ -208,5 +200,7 @@ p {
     margin: 0 .5rem;
     font-size: 1.2rem; }
 
-.material-icons {
-  z-index: 2; }
+.arriba {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem; }

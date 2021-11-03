@@ -1,0 +1,16 @@
+.objetivos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: .8rem;
+
+    ul{
+        li{
+            font-size: 1.5rem;
+            padding: .8rem;
+            i{
+                font-size: 1.5rem;
+                margin-right: .5rem;
+            }
+        }
+    }
+}
